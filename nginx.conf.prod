@@ -2,7 +2,7 @@ server {
     listen 80;
     listen [::]:80;
 
-    server_name 159.223.238.199;
+    server_name ns41.cloudns.net;
     server_tokens off;
 
     location /.well-known/acme-challenge/ {
