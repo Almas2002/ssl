@@ -2,7 +2,7 @@ server {
     listen 80;
     listen [::]:80;
 
-    server_name ns41.cloudns.net;
+    server_name platinum-autorent.com;
     server_tokens off;
 
     location /.well-known/acme-challenge/ {
