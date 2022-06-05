@@ -5,7 +5,7 @@ server {
     server_name platinum-autorent.com www.platinum-autorent.com;
     server_tokens off;
 
-    location ~ /.well-known/acme-challenge/ {
+    location ~ /.well-known/acme-challenge {
         allow all;
         root /var/www/html;
     }
@@ -13,4 +13,15 @@ server {
     location / {
         return 301 https://example.org$request_uri;
     }
+}
+
+server {
+   listen 443 ssl http2;
+   listen [::]:443  ssl http2;
+   server_name platinum-autorent.com www.platinum-autorent.com;
+   index index.html;
+   root /var/www/html;
+
+   server_tokens off;
+
 }
