@@ -9,7 +9,5 @@ server {
         root /var/www/certbot;
     }
 
-    location / {
-        return <h1>Hello </h1>;
-    }
+
 }
