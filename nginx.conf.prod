@@ -25,7 +25,5 @@ server {
    server_tokens off;
    ssl_certificate /etc/letsencrypt/live/platinum-autorent.com/fullchain.pem;
    ssl_certificate_key /etc/letsencrypt/live/platinum-autorent.com/privkey.pem;
-   location / {
-           return 301 https://example.org$request_uri;
-       }
+
 }
