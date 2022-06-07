@@ -20,6 +20,7 @@ services:
     volumes:
         - www-html:/var/www/html
         - etc-letsencrypt:/etc/letsencrypt
+    command: certonly --webroot --webroot-path=/var/www/html --email almas.zhumakhanov.2002a@gmail.com --agree-tos --no-eff-email -d platinum-autorent.com
 volumes:
   www-html:
   etc-letsencrypt:
