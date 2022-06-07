@@ -18,8 +18,8 @@ services:
     depends_on:
       - webserver
     volumes:
-        - ./certbot/www/:/var/www/certbot/:rw
         - www-html:/var/www/html
+        - etc-letsencrypt:/etc/letsencrypt
 volumes:
   www-html:
   etc-letsencrypt:
