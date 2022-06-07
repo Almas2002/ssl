@@ -19,7 +19,6 @@ server {
    listen 443 ssl http2;
    listen [::]:443  ssl http2;
    server_name platinum-autorent.com www.platinum-autorent.com;
-   root /var/www/html;
 
    server_tokens off;
    ssl_certificate /etc/letsencrypt/live/platinum-autorent.com/fullchain.pem;
